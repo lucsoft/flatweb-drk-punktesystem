@@ -1,1 +1,1 @@
-# flatweb-drk-punktesystem
+# Flatweb: "Punktesystem" für DRK OV Furtwangen e.V.
