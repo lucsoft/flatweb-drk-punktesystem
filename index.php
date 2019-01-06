@@ -206,8 +206,7 @@ $theme = 'white';
                                                                                             });
                                                                                             database.editAccount({id: user.id, currentpoints: points, pointshistory: JSON.stringify(user.pointshistory) },() => {});
                                                                                             g.hide();
-                                                                                            z.show();
-                                                                                            
+                                                                                            e.show();
                                                                                         }
                                                                                     },
                                                                                     {
@@ -329,15 +328,14 @@ $theme = 'white';
                                                                                         color:"red",
                                                                                         onclick: (g) => {
                                                                                             
-                                                                                            user.pointshistory.push({value: $('#input_newpoints').val().replace('+', ''),text:$('#input_newtext').val(),id: database.account.id});
+                                                                                           user.pointshistory.push({value: $('#input_newpoints').val().replace('+', ''),text:$('#input_newtext').val(),id: database.account.id});
                                                                                             var points = 0;
                                                                                             user.pointshistory.forEach((g) => {
                                                                                                 points += Number.parseInt(g.value);
                                                                                             });
                                                                                             database.editAccount({id: user.id, currentpoints: points, pointshistory: JSON.stringify(user.pointshistory) },() => {});
                                                                                             g.hide();
-                                                                                            z.show();
-                                                                                            
+                                                                                            e.show();
                                                                                         }
                                                                                     },
                                                                                     {
